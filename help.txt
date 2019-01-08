@@ -1,0 +1,12 @@
+pwd - current path to server working directory
+ls - files in current directory
+space - disk info
+main - server main directory
+users - users' accounts on server
+groups - groups existing on server
+erase_groups_data - delete whole data connected to groups 
+active - presently active users
+setmd - sets server main directory
+decompress path (from current directory)
+	*decompresses file into the same directory
+quit
