@@ -1,0 +1,42 @@
+
+() for optional parameters, others required
+
+login username password
+adduser -name username -password password
+addgroup -name name 
+	(-private true/false) 
+	(-owner username/s *by default current user)
+	(-wm *current user won't own
+	      if no others given ignored)
+group -name groupname
+	owner only:
+	(-addmember username)
+	(-addowner username)
+	(-private true/false)
+	others:
+	(-count *for user count)
+	(-home *home path)
+	(-ls owners/memebers)
+	(-mkdir (-path) *creates 
+		directory by defalut at home)
+ls	*lists files at user home directory
+	(-size *filenames with size)
+	(-sort {size, size_dec, date})
+	(-filter !contains/contains)
+	(-directories)
+	-sort and -filter may be used together
+upload filename
+download -path filename
+	(-compress *for .gz)
+create filename *creates file containing 
+	next input from stdin (overrides is exists)
+mkdir -name	*create directory (default path - home)
+	(-path)
+delete filename	*for both directories and files
+config *enter configuration mode
+	(Available commands:
+	 help
+	 opotion_name value *changes configuration
+	 (temporary changes for permanent edit client.cfg)
+	)
+
